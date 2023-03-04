@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() 
+{
+    int a, b;
+    char str[] = "";
+    char arr[9][14]={"one","two","three","four","five","six","seven",                         "eight","nine"};
+    scanf("%d\n%d", &a, &b);
+  	for (int i=a;i<=b;i++) 
+    {
+        if(i<=9)
+        {
+            printf(arr[i-1]);
+            printf("\n");
+        }
+        else {
+        if(i%2==0)
+        {
+            printf("even");
+            printf("\n");
+        }
+        else {
+        printf("odd");
+        printf("\n");
+        }
+        }
+    }
+    return 0;
+}
+
